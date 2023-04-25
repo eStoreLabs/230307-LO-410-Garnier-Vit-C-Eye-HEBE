@@ -22,11 +22,14 @@ body {
   background: #fff;
 }
 
-@media screen and (min-width: 768px) {
+#es-garnier.es-garnier {
+  max-width: 769px;
+}
+/* @media screen and (min-width: 768px) {
   #es-garnier.es-garnier {
     max-width: 998px;
   }
-}
+} */
 
 #es-garnier.es-garnier * {
   -webkit-box-sizing: border-box;
@@ -49,13 +52,14 @@ body {
 #es-garnier.es-garnier .es-kv__container {
   display: grid;
   grid-template: 
-    "b b a" auto
+    "b b a"
     "b b c"
     "b b c";
 }
 
 #es-garnier.es-garnier .es-kv__imgCtn {
   grid-area: b;
+  width: 100%;
 }
 
 
@@ -68,7 +72,7 @@ body {
 }
 
 #es-garnier.es-garnier .es-kv__logo {
-  width: 90%;
+  width: 50%;
 }
 
 #es-garnier.es-garnier .es-kv__content {
@@ -124,14 +128,6 @@ body {
  top: 20px;
 }
 
-@media screen and (min-width: 425px) {
-  #es-garnier.es-garnier .es-kv__title {
-    font-size: 32px;
-  }
-  #es-garnier.es-garnier .es-kv__subtitle {
-    font-size: 25px;
-  }
-}
 @media screen and (min-width: 768px) {
   #es-garnier.es-garnier .es-kv {
     margin-bottom: 32px;
@@ -147,7 +143,7 @@ body {
   }
 
   #es-garnier.es-garnier .es-kv__content {
-    padding-right: 10%;
+    /* padding-right: 10%; */
   }
 
   #es-garnier.es-garnier .es-kv__packshot {
@@ -156,12 +152,15 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
   #es-garnier.es-garnier .es-kv__imgCtn {
     background-image: url(./img/hero-photo.png);
   background-size: cover;
   background-repeat: no-repeat;
-    width: 550px;
+    width: 384px;
+    height: 300px;
+    background-position: bottom;
+    margin-top: 85px;
   }
 }
 
@@ -211,12 +210,11 @@ body {
 }
 
 #es-garnier.es-garnier .es-intro__intro-subtitle {
-  margin: 0;
-  padding: 0;
+
   line-height: inherit;
   font-family: inherit;
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 800;
   margin-bottom: 16px;
   color: #e9560d;
@@ -274,13 +272,13 @@ width: 40ch;
 @media screen and (min-width: 768px) {
   #es-garnier.es-garnier .es-intro {
     width: 100%;
-    background: linear-gradient(to bottom, #fff, #fff 340px, #f3e383 340px, #f3e383 500px, #fff 500px);
+    background: linear-gradient(to bottom, #fff, #fff 300px, #f3e383 300px, #f3e383 450px, #fff 450px);
   }
 
   #es-garnier.es-garnier .es-intro__container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.45fr 450px 250px; 
+    grid-template-rows: 0.45fr 371px 250px; 
     grid-template-areas: 
       ". title"
       "pics before-after"
@@ -293,10 +291,10 @@ width: 40ch;
   }
   
   #es-garnier.es-garnier #es-intro__left {
-  min-width: 120%;
+  min-width: 90%;
   position: relative;
   /* left: 2%; */
-  bottom: 30px;
+  bottom: 50px;
   }
   
   #es-garnier.es-garnier .es-intro__content--1 {
@@ -314,14 +312,14 @@ width: 40ch;
   }
   
   #es-garnier.es-garnier .es-intro__right {
-    width: 65%;
+    width: 75%;
   }
 
   #es-garnier.es-garnier .es-intro__before {
     left: 3%;
   }
   #es-garnier.es-garnier .es-intro__after {
-    right: 40%;
+    right: 30%;
   }
   #es-garnier.es-garnier .es-intro__content--3 {
      margin-left: 50px;
@@ -474,7 +472,7 @@ width: 40ch;
     content: url("img/border-line-2.png");
     position: absolute;
     top: 46px;
-    left: -154px;
+    left: -64px;
   }
    #es-garnier.es-garnier .es-benefits__texts--3 {
     bottom: 100px;
@@ -484,8 +482,8 @@ width: 40ch;
   #es-garnier.es-garnier .es-benefits__texts--3::before {
     content: url("img/border-line-3.png");
     position: absolute;
-    top: 6px;
-    right: -190px;
+    top: 27px;
+    right: -95px;
   } 
   #es-garnier.es-garnier .es-benefits__texts--4 {
     bottom: 10px;
@@ -496,8 +494,8 @@ width: 40ch;
   #es-garnier.es-garnier .es-benefits__texts--4::before {
     content: url("img/border-line-4.png");
     position: absolute;
-    top: -119px;
-    left: -45px;
+    top: -70px;
+    left: -40px;
   }
 
   #es-garnier.es-garnier .es-benefits__name {
@@ -516,7 +514,7 @@ width: 40ch;
 }
 
 #es-garnier.es-garnier .es-ingredients__img {
-  max-width: 65%;
+  max-width: 90%;
   display: block;
   margin: 0 auto;
 }
@@ -644,8 +642,8 @@ width: 40ch;
 }
 
 #es-garnier.es-garnier .es-results__effect {
-width: 84%;
-margin: 8% auto;
+width: 85%;
+margin: 4% auto;
 background-color: rgba(234, 96, 19, 0.93);
 color: white;
 border-radius: 8px;
@@ -682,9 +680,6 @@ padding: 10px 20px;
 }
 
 @media screen and (min-width: 768px) {
-  #es-garnier.es-garnier .es-results__title {
-    font-size: 22px;
-  }
   
   #es-garnier.es-garnier .es-results__package {
     width: 50%;
@@ -1286,6 +1281,7 @@ padding: 10px 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /* flex-basis: 200px; */
     gap: 16px;
   }
   #es-garnier.es-garnier .es-cross__product {
@@ -1293,7 +1289,7 @@ padding: 10px 20px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    width: 200px;
+    width: 172px;
   }
   #es-garnier.es-garnier .es-cross__product--double {
     min-width: 460px;
@@ -1351,7 +1347,7 @@ padding: 10px 20px;
   }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 760px) {
   #es-garnier.es-garnier .es-ingredients {
     margin: 0 auto;
   }
