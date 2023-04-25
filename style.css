@@ -1281,7 +1281,6 @@ padding: 10px 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /* flex-basis: 200px; */
     gap: 16px;
   }
   #es-garnier.es-garnier .es-cross__product {
